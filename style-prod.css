@@ -212,10 +212,11 @@ h1, h2, h3 { letter-spacing: -.01em; line-height: 1.12; }
 .s-section__head h2 { font-size: clamp(1.5rem, 1rem + 1.8vw, 2.25rem); }
 /* первый экран: фото с прозрачностью .4 (правило Сергея 13.11.2026), затемнение только под текстом слева и внизу */
 .s-hero__bg { height: min(92%, 760px); }
-.s-hero__bg img { opacity: .4; filter: saturate(1.1) brightness(1.15); }
+.s-hero__bg img { opacity: .6; filter: saturate(1.1) brightness(1.15); }
 .s-hero__bg::after { background:
   linear-gradient(90deg, color-mix(in srgb, var(--c-canvas) 72%, transparent) 0%, color-mix(in srgb, var(--c-canvas) 46%, transparent) 34%, transparent 64%),
   linear-gradient(180deg, transparent 0%, transparent 66%, var(--c-canvas) 100%); }
+.s-hero__text .s-lead, .s-hero__text .s-rating { color: var(--c-ink); }
 .s-hero__text h1, .s-hero__text .s-eyebrow, .s-hero__text .s-ticks, .s-hero__text .s-lead, .s-hero__text .s-rating { text-shadow: 0 2px 18px color-mix(in srgb, var(--c-canvas) 80%, transparent); }
 @media (max-width: 880px) {
   .s-hero__bg { height: 520px; }
